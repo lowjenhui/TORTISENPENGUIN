@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FinanceTracker - Expenditures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="row-fluid">
+		<div class="span4">
+			<img src="img/DummyLogo.png" class="img-rounded">
+			<p>Replace this with logo</p>
+		</div>
+		<div class="span4 offset4">
+			<h4 class="text-right">Sign Out</h4>
+		</div>
+	</div>
+
+	<!-- Links to About, Contact... etc. INSERT LINKS ONCE PAGES ARE DONE-->
+	<div class="row-fluid">
+		<div class="span4 offset8">
+			<ul class="nav nav-pills">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<!-- links -->
+						<li><a href="#">email</li>
+						<li><a href="#">address</li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				<!--Sidebar content-->
+				<table class="table table-striped">
+
+					<h2>Accounts</h2>
+
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="row-fluid">
+								<div class="span12">
+									<h4>General Information</h4>
+									<p>Month's Total Income</p>
+									<p>Month's Total Expenditure</p>
+									<p>Remaining Cash</p>
+								</div>
+								<div class="span12">
+									<h4>Graphs</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</table>
+
+			</div>
+			<div class="span9">
+				<!--Body content-->
+
+				<!-- To navigate Content -->
+				<div class="tabbable"> <!-- Only required for left/right tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tabOverview" data-toggle="tab">Overview</a></li>
+						<li><a href="#tabExpenditure" data-toggle="tab">Expenditure</a></li>
+						<li><a href="#tabBudget" data-toggle="tab">Budget</a></li>
+					</ul>
+					<div class="tab-content">
+
+						<!-- ********OVERVIEW TAB********--> 
+						<div class="tab-pane active" id="tabOverview">
+							<h2>Overview</h2>
+							<div class="tabbable"> <!-- Only required for left/right tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab1" data-toggle="tab">All</a></li>
+									<li><a href="#tab2" data-toggle="tab">Category</a></li>
+									<li><a href="#tab3" data-toggle="tab">Merchant</a></li>
+									<li><a href="#tab4" data-toggle="tab">Over Time</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab1">
+										<p><i>Insert chart for 'all' here</i></p>
+									</div>
+									<div class="tab-pane" id="tab2">
+										<p><i>Insert chart for 'category' here</i></p>
+									</div>
+									<div class="tab-pane" id="tab3">
+										<p><i>Insert chart for 'merchant' here</i></p>
+									</div>
+									<div class="tab-pane" id="tab4">
+										<p><i>Insert chart for 'over time' here</i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- ********EXPENDITURE TAB********--> 
+						<div class="tab-pane" id="tabExpenditure">
+							<h2>Expenditure</h2>
+							
+							<div class="row-fluid">
+								<div class="span8">
+								</div>
+								<div class="span4">
+									<!--Search Button-->
+									<div class="input-append">
+										<input class="span9" id="appendedInputButton" type="text">
+										<button class="btn" type="button">Search</button>
+									</div>
+								</div><!--Seach Button no Row-->
+							</div>
+							<p><i>add 'sort by:' button </i></p>
+							<table class="table table-condensed"> <!--table of expenditures-->
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Item</th>
+										<th>Description</th>
+										<th>Category</th>
+										<th>Amount</th>
+										<th>Edit</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>6 June</td>
+										<td>Groceries</td>
+										<td>-</td>
+										<td>Commodities</td>
+										<td>$170.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+									<tr>
+										<td>7 June</td>
+										<td>Water</td>
+										<td>After installing a new swimming pool in the house</td>
+										<td>Bills</td>
+										<td>$50 000.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+									<tr>
+										<td>4 June</td>
+										<td>Clothes</td>
+										<td>Went Bangkok for shopping, die.</td>
+										<td>Bills</td>
+										<td>$5000.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<a class="btn btn-small" href="#"><i class="icon-plus"></i>Add</a>
+
+
+						</div>
+
+
+						<!-- ********BUDGET TAB********--> 
+						<div class="tab-pane" id="tabBudget">
+							<h2>Budget</h2>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
