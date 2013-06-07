@@ -9,8 +9,8 @@
 <body>
 	<div class="row-fluid">
 		<div class="span4">
-			<img src="img/DummyLogo.png" class="img-rounded">
-			<p>Replace this with logo</p>
+			<img src="img/Logo.png" class="img-rounded">
+			<p></p> <!--Blank paragraph-->
 		</div>
 		<div class="span4 offset4">
 			<h4 class="text-right">Sign Out</h4>
@@ -43,29 +43,32 @@
 		<div class="row-fluid">
 			<div class="span3">
 				<!--Sidebar content-->
-				<table class="table table-striped">
-
-					<h2>Accounts</h2>
-
-					<div class="row-fluid">
-						<div class="span12">
-							<div class="row-fluid">
-								<div class="span12">
-									<h4>General Information</h4>
-									<p>Month's Total Income</p>
-									<p>Month's Total Expenditure</p>
-									<p>Remaining Cash</p>
-								</div>
-								<div class="span12">
-									<h4>Graphs</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th><center>ACCOUNTS</center></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<h4>General Information</h4>
+								<p>Month's Total Income</p>
+								<p>Month's Total Expenditure</p>
+								<p>Remaining Cash</p>
+				
+								<hr class="soften">
+								
+								<h4>Graphs</h4>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 
 			</div>
+
+
+
 			<div class="span9">
 				<!--Body content-->
 
@@ -162,14 +165,48 @@
 							</table>
 
 							<a class="btn btn-small" href="#"><i class="icon-plus"></i>Add</a>
-
-
 						</div>
 
 
 						<!-- ********BUDGET TAB********--> 
 						<div class="tab-pane" id="tabBudget">
 							<h2>Budget</h2>
+							<table class="table">
+							 <thead>
+									<tr>
+										<th>CATEGORY</th>
+										<th><!--blank space for graph--></th>
+										<th>BUDGET</th>
+										<th>AMT REMAINING</th>
+										<th>edit</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Total</td>
+										<td><i>graph here =======================================</i></td>
+										<td>$550</td>
+										<td>$170.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+									<tr>										
+										<td>Bills</td>
+										<td><i>graph here =======================================</i></td>
+										<td>$60 000.00</td>
+										<td>$50 000.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+									<tr>
+										<td>Groceries</td>
+										<td><i>graph here =======================================</i></td>
+										<td>$60 000.00</td>
+										<td>$50 000.00</td>
+										<td><i>insert edit button here</i></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<a class="btn btn-small" href="#"><i class="icon-plus"></i>Add</a>
 
 						</div>
 					</div>
